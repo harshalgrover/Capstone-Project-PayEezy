@@ -1,0 +1,60 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./assets/background_Sign_In.png);
+    margin: 100px 0px 0px 0px;
+   
+}
+ .content{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 400px;
+    height: 500px;
+    background-color: white;
+
+ }
+ .image{
+    width: 100px;
+ }
+ #heading{
+    font-size: 30px;
+    font-weight: bold;
+ }
+ #btn{
+    background-color: rgb(2, 74, 126);
+    color: white;
+    font-weight: 550;
+    font-size: 17px;
+    width: 370px;
+    height: 35px;
+    border-radius: 8px;
+    border: 0px;
+    margin: 0px 0px 0px 0px;   
+ }
+ #btn:hover{
+    background-color: rgb(104, 147, 227);
+    color: rgb(0, 0, 0);
+ }
+ a{
+    text-decoration: none;
+    
+ }
+#form{
+    text-align: left;
+    margin: 10px;
+    font-size: 20px;
+}
+.input{
+    width: 370px;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid black;
+}
+
+

@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+html, body {
+  overflow-x: hidden;
+}
+
+
+.nav-list{
+    list-style: none;
+}
+.logo{
+    font-size: 26px;
+    font-family: 'Poppins', 'Nunito Sans', 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+.logo_color1{
+    padding-left: 10px;
+    color: rgb(47, 100, 169);
+}
+.logo_color2{
+    color: rgb(52, 165, 226);
+}
+nav{
+    width: 100vw;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    border-bottom: 2px solid rgb(230, 230, 230);
+    position: fixed;
+    background-color: white;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.nav-list{
+    display: flex;
+    gap: 4vw;
+    align-items: center;
+}
+.signin{
+    margin-right: 10vw;
+    width: 90px;
+    height: 40px;
+    border: none;
+    background-color: white;
+    border-radius: 15px;
+    font-size: 17px;
+}
+.signin:hover{
+    background-color: rgb(97, 159, 239);
+    cursor: pointer;
+}
+
+.signin:hover a{
+    color: white;
+}
+.trust{
+    display: flex;
+}
+.newboxes{
+    border: 1px solid grey ;
+    margin: 20px;
+    border-radius: 8px;
+    width: 400px;
+    height: 150px;
+    color: white;
+    background-color: #4c76b0;
+    margin-top: 30px;
+}
+.newboxes h2{
+    font-size: 45px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+.newboxes p{
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 1.5;
+}
+.box2 h1{
+    font-size: 41px;
+    margin-top: 20px;
+    padding: 0px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 30px;
+    text-shadow: #000000;
+}
+.box2 p{
+    font-weight: 300;
+    font-size: 20px;
+    color: white;}
+
+
+
+
+
+
+.hero {
+  background: linear-gradient(180deg, #74a4ec, #113c7a);
+  text-align: center;
+  padding: 80px 20px;
+
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.hero h1 span {
+  color: #8bd0fe;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+  color: #dbe8ff;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.btn {
+  padding: 14px 32px;
+  border-radius: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.btn.primary {
+  background-color: #4db8ff;
+  color: #fff;
+}
+
+.btn.primary:hover {
+  background-color: #1a9fff;
+}
+
+.btn.secondary {
+  border: 2px solid #4db8ff;
+  color: #4db8ff;
+}
+
+.btn.secondary:hover {
+  background-color: #4db8ff;
+  color: #fff;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  font-size: 1rem;
+  color: #cfe5ff;
+}
+
+.features span {
+  color: #4db8ff;
+  margin-right: 6px;
+}
+
+
+
+
+
+
+.hero2{
+    width: 100%;
+    height: 800px;
+    
+    text-align: center;
+    padding: 80px 0px;
+}
+.hero2_p1{
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding-bottom: 25px;
+}
+.hero2_p2{
+    color: grey;
+    font-size: 1.2rem;
+}
+.hero2_div{
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+}
+.box{
+    width: 20vw;
+    border-radius: 10px;
+    border: 1px solid rgb(202, 201, 201);
+    height: 300px;
+    margin: 50px;
+
+}
+.a{
+    width: 60px;
+    padding-bottom: 30px;
+}
+.ab,.f{
+    color: grey;
+    padding-top: 30px;
+    line-height: 1.7;
+}
+.abc,.e{
+    font-weight: 600;
+    font-size: 24px;
+}
+
+
+
+
+.d,.g{
+    width: 60px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+
+
+
+.box2{
+    text-align: center;
+    max-width: 100%;
+    height: 500px;
+    background: linear-gradient(180deg, #74a4ec, #113c7a);
+    padding: 20px;
+}
+.box2 h1{
+    font-size: 50px;
+    margin-top: 20px;
+    padding: 0px;
+    color: rgb(0, 49, 112);
+    margin-top: 50px;
+}
+.box2 p{
+    font-weight: 300;
+    font-size: 20px;
+    color: rgb(223, 233, 239);
+    margin-bottom: 25px;
+    margin-top: 45px;
+}
+.newboxes{
+    border: #fff;
+}
+
+
+
+
+.footer1{
+    display: flex;
+    height: 300px;
+}
+
+.footer_div{
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
+      gap: 40px;}
+.footer_div li a{
+    color: grey;
+    
+}
+.footer_div ul li{
+    list-style: none;
+}
