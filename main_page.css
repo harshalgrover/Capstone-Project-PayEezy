@@ -57,6 +57,10 @@ a{
     cursor: pointer;
 }
 
+.nav-list a:hover{
+    color: rgb(97, 159, 239);
+}
+
 .signin:hover a{
     color: white;
 }
@@ -96,6 +100,14 @@ a{
     font-size: 20px;
     color: white;}
 
+.box:hover{
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+.newboxes:hover{
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
 
 
 
@@ -107,7 +119,7 @@ a{
   padding: 80px 20px;
 
   width: 100%;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  box-shadow: 0 10px 30px rgba(50, 50, 50, 0.3);
 }
 
 .hero h1 {
@@ -268,17 +280,31 @@ a{
 
 .footer1{
     display: flex;
-    height: 300px;
+    justify-content: space-around;
+    padding: 60px 40px;
 }
 
 .footer_div{
-      display: grid;
-      grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
-      gap: 40px;}
+      width: 300px;
+    }
 .footer_div li a{
     color: grey;
+    margin: 20px;
     
 }
 .footer_div ul li{
     list-style: none;
+    margin: 20px;
+}
+
+.footer_div ul li a:hover {
+    color: rgb(2, 58, 95);
+    padding-left: 6px;
+    transition: 0.2s;
+}
+.footer{
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(240, 240, 240);
+    color: grey;
 }

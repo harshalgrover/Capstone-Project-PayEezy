@@ -7,14 +7,14 @@ body{
     text-align: center;
     justify-content: center;
     align-items: center;
-    background-image: url(./assets/background_Sign_In.png);
+    background:linear-gradient(90deg,#74a4ec, #113c7a);
     margin: 100px 0px 0px 0px;
    
 }
  .content{
-    border: 2px solid black;
+    border: none;
     border-radius: 10px;
-    width: 400px;
+    width: 430px;
     height: 500px;
     background-color: white;
 
@@ -49,12 +49,13 @@ body{
     text-align: left;
     margin: 10px;
     font-size: 20px;
+    padding-left: 20px;
 }
 .input{
     width: 370px;
     height: 30px;
     border-radius: 3px;
-    border: 1px solid black;
+    border: grey 1px solid;
 }
 
 

@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+html, body {
+  overflow-x: hidden;
+}
+
+
+.nav-list{
+    list-style: none;
+}
+.logo{
+    font-size: 26px;
+    font-family: 'Poppins', 'Nunito Sans', 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+.logo_color1{
+    padding-left: 10px;
+    color: rgb(47, 100, 169);
+}
+.logo_color2{
+    color: rgb(52, 165, 226);
+}
+nav{
+    width: 100vw;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    border-bottom: 2px solid rgb(230, 230, 230);
+    position: fixed;
+    background-color: white;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.nav-list{
+    display: flex;
+    gap: 4vw;
+    align-items: center;
+}
+.signin{
+    margin-right: 10vw;
+    width: 90px;
+    height: 40px;
+    border: none;
+    background-color: white;
+    border-radius: 15px;
+    font-size: 17px;
+}
+.signin:hover{
+    background-color: rgb(97, 159, 239);
+    cursor: pointer;
+}
+
+.signin:hover a{
+    color: white;
+}
+.nav-list a:hover{
+    color: rgb(97, 159, 239);
+}
+
+
+
+
+
+.header{margin-top: 70px;
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 40px;
+}
+.header h1{
+    font-size: 40px;
+    font-weight: 700;
+    padding-bottom: 30px;
+    color: rgb(7, 75, 134);
+}
+.header p{
+    font-size: 20px;
+    color: grey;
+    padding-bottom: 20px;
+}
+.box{
+    border: 1px solid grey ;
+    margin: 90px;
+    border-radius: 8px;
+    width: 300px;
+    height: 350px;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    margin-top: 30px;
+    display: inline-block;
+    padding: 10px 10px;
+
+}
+.box img{
+    width: 50px;
+    
+    margin-bottom: 20px;
+    
+}
+.box1{
+    background: linear-gradient(90deg,#74a4ec, #113c7a);
+    display: flex;
+    flex-wrap: wrap;
+}
+.box ul{
+    list-style-type: disc;
+    padding: 0px 10px;
+    line-height: 24px;
+    color: grey;
+}
+.box h3{
+    padding: 0px 10px 20px;
+    font-size: 24px;
+    line-height: 24px;
+
+}
+.box p{
+    padding: 0px 10px 10px;
+    line-height: 24px;
+    color: grey;
+}

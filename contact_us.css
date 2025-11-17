@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+html, body {
+  overflow-x: hidden;
+}
+
+
+.nav-list{
+    list-style: none;
+}
+.logo{
+    font-size: 26px;
+    font-family: 'Poppins', 'Nunito Sans', 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+.logo_color1{
+    padding-left: 10px;
+    color: rgb(47, 100, 169);
+}
+.logo_color2{
+    color: rgb(52, 165, 226);
+}
+.nav-list a:hover{
+    color: rgb(97, 159, 239);
+}
+nav{
+    width: 100vw;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    border-bottom: 2px solid rgb(230, 230, 230);
+    position: fixed;
+    background-color: white;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.nav-list{
+    display: flex;
+    gap: 4vw;
+    align-items: center;
+}
+.signin{
+    margin-right: 10vw;
+    width: 90px;
+    height: 40px;
+    border: none;
+    background-color: white;
+    border-radius: 15px;
+    font-size: 17px;
+}
+.signin:hover{
+    background-color: rgb(97, 159, 239);
+    cursor: pointer;
+}
+
+.signin:hover a{
+    color: white;
+}
+
+
+
+
+
+
+.box1{
+    margin-top: 50px;
+    text-align: center;
+    padding: 40px;
+    background:linear-gradient(180deg
+    ,#74a4ec, #113c7a);
+}
+.box1 h1{
+    padding: 30px;
+    color: white;
+    font-size: 50px;
+}
+.box1 p{
+    color: white;
+}
+.container{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    margin: 70px;
+    display: inline-block;
+    border-radius: 10px;
+}
+.container:hover{
+    scale: 1.04;
+}
+.container p,h3{
+    color: black;
+    padding: 10px;
+}
+.container img{
+    margin-top: 10px;
+    width: 50px;
+}
+.container:hover{
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
+.footer1{
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.footer_div{
+      width: 300px;
+      text-align: center;
+    }
+.footer_div li a{
+    color: grey;
+    margin: 20px;
+    
+}
+.footer_div ul li{
+    list-style: none;
+    margin: 20px;
+}
+
+.footer_div ul li a:hover {
+    color: rgb(2, 58, 95);
+    padding-left: 6px;
+    transition: 0.2s;
+}
+.footer{
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(240, 240, 240);
+    color: grey;
+}
+
+.form {
+    width: 100%;
+    margin: 40px auto;
+    background: #fff;
+    padding: 40px;
+    border: 1px solid #e6e9f0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    border-radius: 14px;
+}
+
+.form h2 {
+    margin-bottom: 25px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #1c1c1c;
+}
+
+.form label {
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 8px;
+    font-size: 15px;
+    color: #484a4f;
+    font-weight: 600;
+}
+form input,
+form textarea {
+    width: 90%;
+    padding: 14px 18px;
+    font-size: 15px;
+    border: 1px solid #d7dce8;
+    border-radius: 10px;
+    background: #fdfdfd;
+}
+form textarea{
+    height: 70px;
+}
+form button{
+    width: 110px;
+    height: 50px;
+    margin-top: 40px;
+    background-color: #74a4ec;
+    border-radius: 10px;
+    border: none;
+}
+form button:hover{
+    background-color: #113c7a;
+    color: white;
+    cursor: pointer;
+}
