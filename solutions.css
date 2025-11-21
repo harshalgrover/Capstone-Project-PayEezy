@@ -125,3 +125,41 @@ a{
     line-height: 24px;
     color: grey;
 }
+.box:hover{
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    scale: 1.03;
+    cursor: pointer;
+}
+
+.footer1{
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.footer_div{
+      width: 300px;
+      text-align: center;
+    }
+.footer_div li a{
+    color: grey;
+    margin: 20px;
+    
+}
+.footer_div ul li{
+    list-style: none;
+    margin: 20px;
+}
+
+.footer_div ul li a:hover {
+    color: rgb(2, 58, 95);
+    padding-left: 6px;
+    transition: 0.2s;
+}
+.footer{
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(240, 240, 240);
+    color: grey;
+}
