@@ -1,4 +1,5 @@
 // --------------- DARK MODE SYSTEM (GLOBAL) -----------------
+alert("Welcome Sir!");
 
 // 1) Toggle button reference
 const toggle = document.getElementById("modeToggle");
