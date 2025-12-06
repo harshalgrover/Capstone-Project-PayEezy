@@ -1,16 +1,16 @@
-// --------------- DARK MODE SYSTEM (GLOBAL) -----------------
+
 alert("Welcome Sir!");
 
-// 1) Toggle button reference
+
 const toggle = document.getElementById("modeToggle");
 
-// 2) Apply saved theme (if any)
+
 if (localStorage.getItem("theme") === "dark") {
     document.body.classList.add("dark");
     if (toggle) toggle.textContent = "☀️";
 }
 
-// 3) Toggle button click handler
+
 if (toggle) {
     toggle.addEventListener("click", () => {
         document.body.classList.toggle("dark");
