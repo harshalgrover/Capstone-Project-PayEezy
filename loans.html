@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Quick Loans — PayEezy</title>
+    <link rel="stylesheet" href="loans.css" />
+</head>
+
+<body>
+
+
+<nav class="navbar">
+
+    <div class="nav-left">
+        <span class="logo">
+            <span class="logo_color1">Pay</span><span class="logo_color2">Eezy</span>
+        </span>
+
+        <ul class="nav-list" id="navList">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="solutions.html">Solutions</a></li>
+            <li><a href="mutual_funds.html">Mutual Funds</a></li>
+            <li><a href="loans.html" class="active">Loans</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+
+            <li class="qr-icon">
+                <a href="#showQR">Your QR 
+                    <img src="./assets/qr.png" alt="QR Icon">
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="nav-right">
+
+        <button class="dark-toggle" id="darkToggle">🌙</button>
+
+        <button class="signin">
+            <a href="./Sign_in.html">Sign In</a>
+        </button>
+
+    </div>
+
+</nav>
+
+
+
+
+<section class="hero">
+    <div class="icon">💰</div>
+    <h1>Quick Loans</h1>
+    <p>Get instant loans with competitive rates and flexible repayment options</p>
+</section>
+
+
+
+
+<div class="container">
+
+    <div class="loan-section">
+
+
+        <div class="loan-card">
+            <h2>Loan Calculator</h2>
+            <p class="sub">Calculate your monthly payment</p>
+
+            <div class="slider-label">
+                <span id="loanLabel">Loan Amount: $5,000</span>
+            </div>
+
+            <input type="range" min="1000" max="50000" value="5000" id="loanSlider" />
+
+            <div class="slider-label">
+                <span>$1,000</span>
+                <span>$50,000</span>
+            </div>
+
+            <select id="loanTerm" class="select-box">
+                <option value="12">12 months</option>
+                <option value="24">24 months</option>
+                <option value="36">36 months</option>
+                <option value="48">48 months</option>
+            </select>
+
+            <select class="select-box">
+                <option>Select purpose</option>
+                <option>Wedding</option>
+                <option>Travel</option>
+                <option>Education</option>
+                <option>Home Renovation</option>
+            </select>
+
+            <div class="result-box">
+                <div class="value" id="monthlyPay">$434.94</div>
+                <p class="muted-rate">8% APR</p>
+            </div>
+
+            <button class="apply-btn">Apply for Loan</button>
+        </div>
+
+
+
+
+        <div class="elig-card">
+            <h3>Eligibility Criteria</h3>
+
+            <div class="elig-list">
+                <div><span>✔</span> Age: 21–65 years</div>
+                <div><span>✔</span> Minimum income: $2,000/month</div>
+                <div><span>✔</span> Credit score: 650+</div>
+                <div><span>✔</span> Employment: 6+ months</div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="loan-types">
+        <h2>Available Loan Types</h2>
+
+        <div class="grid">
+
+            <div class="type-card">
+                <h3>Personal Loan</h3>
+                <p><strong>Interest Rate:</strong> 8% – 12%</p>
+                <p><strong>Loan Amount:</strong> $1,000 – $50,000</p>
+                <p><strong>Loan Term:</strong> 12 – 60 months</p>
+            </div>
+
+            <div class="type-card">
+                <h3>Home Loan</h3>
+                <p><strong>Interest Rate:</strong> 6.5% – 9%</p>
+                <p><strong>Loan Amount:</strong> $50,000 – $500,000</p>
+                <p><strong>Loan Term:</strong> 120 – 360 months</p>
+            </div>
+
+            <div class="type-card">
+                <h3>Auto Loan</h3>
+                <p><strong>Interest Rate:</strong> 7% – 11%</p>
+                <p><strong>Loan Amount:</strong> $5,000 – $75,000</p>
+                <p><strong>Loan Term:</strong> 12 – 84 months</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<div id="showQR" class="qr-popup">
+    <div class="qr-box">
+        <a href="#" class="close">&times;</a>
+        <h2>Scan to Pay</h2>
+        <img src="./assets/qr.png" class="qr-img" />
+        <p>UPI: harshalgrover04@ptaxis</p>
+    </div>
+</div>
+
+
+<script src="loans.js" defer></script>
+<script src="darkmode.js"></script>
+
+
+</body>
+</html>

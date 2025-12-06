@@ -3,61 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./contact_us.css">
-    
+    <title>Contact Us — PayEezy</title>
+    <link rel="stylesheet" href="contact_us.css">
 </head>
+
 <body>
-    <nav>
-        <div class="nav-logo">
-            <ul class="nav-list">
-                <li class="logo">
-                    <span class="logo_color1">Pay</span><span class="logo_color2">Eezy</span>
-                </li>
-                <li> <a href="./index.html">Home</a></li>
-                <li> <a href="./solutions.html">Solutions</a></li>
-                <li> <a href="./contact_us.html">Contact Us</a></li>
-            </ul>
-        </div>
-        <div>
-            <button class="signin"><a href="./Sign_in.html" >Sign In</a></button>
-        </div>
-    </nav>
-    
 
 
-    <div class="box1">
-        <h1>Get in Touch</h1>
-        <p>Have questions about our payment solutions? We're here to help. Reach out to our team.</p>
+<nav>
+    <div class="nav-logo">
+        <ul class="nav-list">
 
-        <div class="container">
-            <img src="./assets/email.png" alt=""><h3>Email Us</h3>
-        <p>support@payeezy.com</p></div>
-        <div class="container">
-            <img src="./assets/call.png" alt=""><h3>Call Us</h3>
-        <p>+1 (555) 123-4567</p></div>
-        <div class="container">
-            <img src="./assets/location.png" alt=""><h3>Visit Us</h3>
-        <p>123 Business St, Tech City</p></div>
+            <li class="logo">
+                <span class="logo_color1">Pay</span><span class="logo_color2">Eezy</span>
+            </li>
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="solutions.html">Solutions</a></li>
+            <li><a href="mutual_funds.html">Mutual Funds</a></li>
+            <li><a href="loans.html">Loans</a></li>
+            <li><a href="contact_us.html" class="active">Contact Us</a></li>
+
+            <li class="qr-icon">
+                <a href="#showQR">
+                    Your QR
+                    <img src="./assets/qr.png" alt="QR Icon">
+                </a>
+            </li>
+            <button class="mode-toggle" id="modeToggle">🌙</button>
+
+
+        </ul>
     </div>
-    <form action="#" class="form">
-        <h2>Send us a Message</h2>
-        <label for="Name">Name</label>
-        <input type="text" id="Name" name="Name" placeholder="Your name" required>
-        <label for="email">Email</label>
-        <input type="email" name="Email" id="Email" placeholder="your@example.com" required>
-        <label for="Subject">Subject</label>
-        <input type="text" id="Subject" name="Subject" placeholder="Whats this about ?" required>
-        <label for="Message">Message</label>
-        <textarea name="Message" id="Message" placeholder="Tell us more about your inquiry.."></textarea>
-        <button type="submit">Send Message</button>
-    </form>
+
+    <div>
+        <button class="signin">
+            <a href="./Sign_in.html">Sign In</a>
+        </button>
+    </div>
+</nav>
 
 
 
+<div class="box1">
+    <h1>Get in Touch</h1>
+    <p>Have questions about our payment solutions? We're here to help. Reach out to our team.</p>
+
+    <div class="contact-options">
+
+        <div class="container">
+            <img src="./assets/email.png" alt="">
+            <h3>Email Us</h3>
+            <p>support@payeezy.com</p>
+        </div>
+
+        <div class="container">
+            <img src="./assets/call.png" alt="">
+            <h3>Call Us</h3>
+            <p>+1 (555) 123-4567</p>
+        </div>
+
+        <div class="container">
+            <img src="./assets/location.png" alt="">
+            <h3>Visit Us</h3>
+            <p>123 Business St, Tech City</p>
+        </div>
+
+    </div>
+</div>
 
 
-    <div class="footer1">
+
+<form class="form">
+    <h2>Send us a Message</h2>
+
+    <label>Name</label>
+    <input type="text" placeholder="Your name" required>
+
+    <label>Email</label>
+    <input type="email" placeholder="your@example.com" required>
+
+    <label>Subject</label>
+    <input type="text" placeholder="What's this about?" required>
+
+    <label>Message</label>
+    <textarea placeholder="Tell us more about your inquiry.."></textarea>
+
+    <button type="submit">Send Message</button>
+</form>
+
+
+
+<div class="footer1">
     <div class="footer_div">
         <h3>Products</h3>
         <ul>
@@ -68,6 +105,7 @@
           <li><a href="#">Smart Collect</a></li>
         </ul>
     </div>
+
     <div class="footer_div">
         <h3>Company</h3>
         <ul>
@@ -78,6 +116,7 @@
           <li><a href="#">Contact</a></li>
         </ul>
     </div>
+
     <div class="footer_div">
         <h3>Resources</h3>
         <ul>
@@ -88,6 +127,7 @@
           <li><a href="#">Community</a></li>
         </ul>
     </div>
+
     <div class="footer_div">
         <h3>Legal</h3>
         <ul>
@@ -96,12 +136,22 @@
           <li><a href="#">Security</a></li>
           <li><a href="#">Compliance</a></li>
         </ul>
-    </div></div>
-
-    <div class="footer">© 2025 PayEezy. All rights reserved.
-
     </div>
+</div>
 
+<div class="footer">© 2025 PayEezy. All rights reserved.</div>
+
+
+
+<div id="showQR" class="qr-popup">
+    <div class="qr-box">
+        <a href="#" class="close">&times;</a>
+        <h2>Scan to Pay</h2>
+        <img src="./assets/qr.png" class="qr-img" />
+        <p>UPI: harshalgrover04@ptaxis</p>
+    </div>
+</div>
+<script src="darkmode.js"></script>
 
 </body>
 </html>

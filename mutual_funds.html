@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mutual Funds — PayEezy</title>
+    <link rel="stylesheet" href="mutual_funds.css">
+</head>
+<body>
+
+<nav class="navbar">
+
+    <div class="nav-left">
+        <span class="logo">
+            <span class="logo_color1">Pay</span><span class="logo_color2">Eezy</span>
+        </span>
+
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="solutions.html">Solutions</a></li>
+            <li><a href="mutual_funds.html" class="active">Mutual Funds</a></li>
+            <li><a href="loans.html">Loans</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+
+            <li class="qr-icon">
+                <a href="#showQR">
+                    Your QR <img src="./assets/qr.png" alt="">
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="nav-right">
+
+        <!-- 🌙 DARK MODE BUTTON -->
+        <button class="mode-toggle" id="modeToggle">🌙</button>
+
+        <button class="signin">
+            <a href="./Sign_in.html">Sign In</a>
+        </button>
+    </div>
+
+</nav>
+
+
+
+
+<!-- HERO -->
+<section class="hero-mf">
+    <div class="hero-icon">
+        <img src="./assets/mf_icon.png" alt="">
+    </div>
+
+    <h1>Mutual Funds</h1>
+    <p class="hero-sub">
+        Invest in professionally managed mutual funds — diversified options, transparent fees 
+        and flexible SIPs to help you meet your financial goals.
+    </p>
+</section>
+
+
+
+<!-- STATS -->
+<section class="stats">
+
+    <div class="stat-card">
+        <p class="label">Total Invested</p>
+        <h2>$5,000</h2>
+    </div>
+
+    <div class="stat-card">
+        <p class="label">Current Value</p>
+        <h2 class="green">$5,750</h2>
+        <p class="growth">▲ +15% overall returns</p>
+    </div>
+
+    <div class="stat-card">
+        <p class="label">Active Funds</p>
+        <h2>3</h2>
+    </div>
+
+</section>
+
+
+
+<h2 class="section-title">Available Mutual Funds</h2>
+
+
+
+<!-- FUNDS GRID -->
+<section class="funds-container">
+
+    <div class="fund-card">
+        <div class="fund-top">
+            <h3>Growth Index Fund</h3>
+            <span class="tag large">Large Cap</span>
+        </div>
+        <p class="nav">NAV: $128.45</p>
+
+        <div class="returns">
+            <p>1Y Returns <span class="green">▲ 15.8%</span></p>
+            <p>3Y Returns <span class="green">12.5%</span></p>
+        </div>
+
+        <p class="min">Min. Investment <b>$500</b></p>
+        <span class="risk moderate">Moderate Risk</span>
+
+        <button class="invest-btn">Invest Now</button>
+    </div>
+
+
+    <div class="fund-card">
+        <div class="fund-top">
+            <h3>Balanced Advantage Fund</h3>
+            <span class="tag hybrid">Hybrid</span>
+        </div>
+        <p class="nav">NAV: $95.32</p>
+
+        <div class="returns">
+            <p>1Y Returns <span class="green">▲ 11.2%</span></p>
+            <p>3Y Returns <span class="green">10.8%</span></p>
+        </div>
+
+        <p class="min">Min. Investment <b>$1000</b></p>
+        <span class="risk low">Low Risk</span>
+
+        <button class="invest-btn">Invest Now</button>
+    </div>
+
+
+    <div class="fund-card">
+        <div class="fund-top">
+            <h3>Small Cap Opportunities</h3>
+            <span class="tag small">Small Cap</span>
+        </div>
+        <p class="nav">NAV: $156.78</p>
+
+        <div class="returns">
+            <p>1Y Returns <span class="green">▲ 22.4%</span></p>
+            <p>3Y Returns <span class="green">18.9%</span></p>
+        </div>
+
+        <p class="min">Min. Investment <b>$500</b></p>
+        <span class="risk high">High Risk</span>
+
+        <button class="invest-btn">Invest Now</button>
+    </div>
+
+
+    <div class="fund-card">
+        <div class="fund-top">
+            <h3>Blue Chip Fund</h3>
+            <span class="tag large">Large Cap</span>
+        </div>
+        <p class="nav">NAV: $142.56</p>
+
+        <div class="returns">
+            <p>1Y Returns <span class="green">▲ 13.5%</span></p>
+            <p>3Y Returns <span class="green">11.2%</span></p>
+        </div>
+
+        <p class="min">Min. Investment <b>$1000</b></p>
+        <span class="risk low">Low Risk</span>
+
+        <button class="invest-btn">Invest Now</button>
+    </div>
+
+</section>
+
+
+
+<!-- QR POPUP -->
+<div id="showQR" class="qr-popup">
+    <div class="qr-box">
+        <a href="#" class="close">&times;</a>
+        <h2>Scan to Pay</h2>
+        <img src="./assets/qr.png" class="qr-img" />
+        <p>UPI: harshalgrover04@ptaxis</p>
+    </div>
+</div>
+
+
+
+<!-- 🌙 DARK MODE SCRIPT -->
+<script src="darkmode.js"></script>
+
+
+</body>
+</html>

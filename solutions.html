@@ -8,20 +8,38 @@
 </head>
 <body>
     <nav>
-        <div class="nav-logo">
-            <ul class="nav-list">
-                <li class="logo">
-                    <span class="logo_color1">Pay</span><span class="logo_color2">Eezy</span>
-                </li>
-                <li> <a href="./index.html">Home</a></li>
-                <li> <a href="./solutions.html">Solutions</a></li>
-                <li> <a href="./contact_us.html">Contact Us</a></li>
-            </ul>
-        </div>
-        <div>
-            <button class="signin"><a href="./Sign_in.html" >Sign In</a></button>
-        </div>
-    </nav>
+    <div class="nav-logo">
+        <ul class="nav-list">
+
+            <li class="logo">
+                <span class="logo_color1">Pay</span><span class="logo_color2">Eezy</span>
+            </li>
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="solutions.html" class="active">Solutions</a></li>
+            <li><a href="mutual_funds.html">Mutual Funds</a></li>
+            <li><a href="loans.html">Loans</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+
+            <li class="qr-icon">
+                <a href="#showQR">
+                    Your QR
+                    <img src="./assets/qr.png" alt="QR Icon">
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="nav-right">
+
+        <button id="darkToggle" class="dark-btn">🌙</button>
+
+        <button class="signin">
+            <a href="./Sign_in.html">Sign In</a>
+        </button>
+    </div>
+</nav>
+
     
 
     <div class="header">
@@ -140,8 +158,20 @@
         </ul>
     </div></div>
 
+    <div id="showQR" class="qr-popup">
+    <div class="qr-box">
+        <a href="#" class="close">&times;</a>
+        <h2>Scan to Pay</h2>
+        <img src="./assets/qr.png" class="qr-img" />
+        <p>UPI: harshalgrover04@ptaxis</p>
+    </div>
+</div>
+
     <div class="footer">© 2025 PayEezy. All rights reserved.
 
     </div>
+<script src="darkmode.js"></script>
+
+
 </body>
 </html>

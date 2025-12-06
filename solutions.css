@@ -8,63 +8,6 @@ html, body {
 }
 
 
-.nav-list{
-    list-style: none;
-}
-.logo{
-    font-size: 26px;
-    font-family: 'Poppins', 'Nunito Sans', 'Montserrat', sans-serif;
-    font-weight: 700;
-}
-.logo_color1{
-    padding-left: 10px;
-    color: rgb(47, 100, 169);
-}
-.logo_color2{
-    color: rgb(52, 165, 226);
-}
-nav{
-    width: 100vw;
-    height: 6vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 18px;
-    border-bottom: 2px solid rgb(230, 230, 230);
-    position: fixed;
-    background-color: white;
-}
-a{
-    text-decoration: none;
-    color: black;
-}
-.nav-list{
-    display: flex;
-    gap: 4vw;
-    align-items: center;
-}
-.signin{
-    margin-right: 10vw;
-    width: 90px;
-    height: 40px;
-    border: none;
-    background-color: white;
-    border-radius: 15px;
-    font-size: 17px;
-}
-.signin:hover{
-    background-color: rgb(97, 159, 239);
-    cursor: pointer;
-}
-
-.signin:hover a{
-    color: white;
-}
-.nav-list a:hover{
-    color: rgb(97, 159, 239);
-}
-
-
 
 
 
@@ -162,4 +105,223 @@ a{
     padding: 20px;
     background-color: rgb(240, 240, 240);
     color: grey;
+}
+
+
+nav{
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #ffffff;
+    border-bottom: 1px solid #e6e6e6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    z-index: 9999;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #000;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.nav-list a:hover {
+    color: #4db8ff;
+    transition: 0.2s ease;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.logo_color1 {
+    color: rgb(47, 100, 169);
+}
+.logo_color2 {
+    color: rgb(52, 165, 226);
+}
+
+.signin {
+    width: 95px;
+    height: 40px;
+    background: white;
+    border-radius: 10px;
+    border: 1px solid #dcdcdc;
+    cursor: pointer;
+    margin-right: 70px;
+}
+
+.signin:hover {
+    background: #4db8ff;
+}
+.signin:hover a {
+    color: white;
+}
+
+.signin a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+
+
+
+
+
+
+.qr-icon a {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 10px;
+    border-radius: 6px;
+}
+
+.qr-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+.qr-icon a:hover {
+    background: #204b82;
+    color: white;
+}
+ .qr-popup {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.25s ease;
+}
+
+.qr-popup:target {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.qr-box {
+    background: white;
+    padding: 25px;
+    width: 300px;
+    border-radius: 12px;
+    text-align: center;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    right: 14px;
+    top: 10px;
+    font-size: 28px;
+    color: #333;
+    text-decoration: none;
+}
+
+.qr-img {
+    width: 200px;
+    height: 200px;
+}
+
+
+.mode-toggle {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.25s;
+}
+
+.mode-toggle:hover {
+    background: #4db8ff;
+    color: white;
+}
+
+
+
+body.dark {
+    background: #0f172a;
+    color: white;
+}
+
+
+body.dark nav {
+    background: #1e293b;
+    border-bottom: 1px solid #334155;
+}
+
+body.dark .nav-list a {
+    color: #e2e8f0;
+}
+body.dark .nav-list a:hover {
+    color: #60a5fa;
+}
+
+
+body.dark .box {
+    background: #1e293b;
+    border: 1px solid #334155;
+    color: white;
+}
+
+
+body.dark footer {
+    background: #1e293b;
+    color: #cbd5e1;
+}
+
+
+body.dark .qr-box {
+    background: #1e293b;
+    color: white;
+}
+
+
+@media (max-width: 600px) {
+
+
+    .nav-list,
+    .signin {
+        display: none ;
+    }
+
+    nav {
+        justify-content: center;  
+        padding: 0 20px;
+    }
+
+    .nav-logo {
+        width: 100%;
+        display: flex;
+        justify-content: center; 
+    }
+
+    .logo {
+        font-size: 24px;
+    }
 }
